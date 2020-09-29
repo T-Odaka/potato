@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PotatoListController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\PagenationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,6 @@ Route::get('/', [PotatoListController::class, 'index']);
 Route::get('contact', [ContactsController::class, 'index']);
 Route::post('contact/confirm', [ContactsController::class, 'confirm']);
 Route::post('contact/complete', [ContactsController::class, 'complete']);
+
+Route::get('pagenation',[PagenationController::class, 'make']);
+Route::get('grid',[PagenationController::class, 'gridtest']);
