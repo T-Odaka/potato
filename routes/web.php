@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PotatoListController;
+use App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,6 @@ use App\Http\Controllers\PotatoListController;
 
 Route::get('/', [PotatoListController::class, 'index']);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('contact', [ContactsController::class, 'index']);
+Route::post('contact/confirm', [ContactsController::class, 'confirm']);
+Route::post('contact/complete', [ContactsController::class, 'complete']);
