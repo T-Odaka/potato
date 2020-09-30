@@ -34,7 +34,7 @@ class ContactsController extends Controller
         $input = $request->except('action');
 
         if ($request->action === '戻る') {
-            return redirect()->action('ContactsController@index')->withInput($input);
+            return redirect()->action([ContactsController::class,'index'])->withInput($input);
         }
 
         // チェックボックス（配列）を「,」区切りの文字列に

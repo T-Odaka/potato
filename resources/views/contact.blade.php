@@ -1,12 +1,14 @@
- 
 @extends('layout.common')
 @include('layout.header')
+@include('layout.footer')
+@include('layout.submenu')
+@section('title', 'お問い合わせ')
 @section('content')
  
  
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-12">
             <div class="panel panel-default">
                 <div class="panel-heading">お問い合わせ</div>
                 <div class="panel-body">

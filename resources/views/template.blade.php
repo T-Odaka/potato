@@ -4,7 +4,6 @@
 @section('keywords', 'キーワード1,キーワード2,キーワード3')
 @section('description', 'インデックスページの説明文です')
 @section('pageCss')
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 @endsection
 
@@ -12,11 +11,23 @@
 
 @section('content')
 <div class="container">
+
+    <div class="dropdown offset-10 col-2">
+        <button type="button" id="dropdown1" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            並び替え
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="#">Menu #1</a>
+            <a class="dropdown-item" href="#">Menu #2</a>
+            <a class="dropdown-item" href="#">Menu #3</a>
+        </div>
+    </div>
+
     <div class="row">
         <div class="card-deck">
 
             @foreach ($pages as $page)
-            <div class="col-4">
+            <div class="col-xl-4 col-sm-6 grid">
                 <div class="card">
 
                     <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
@@ -63,7 +74,7 @@
                                         text: '5段階評価'
                                     },
                                     scale: {
-                                        label:{
+                                        label: {
                                             display: false,
                                         },
                                         ticks: {

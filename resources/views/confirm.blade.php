@@ -1,4 +1,8 @@
 @extends('layout.common')
+@include('layout.header')
+@include('layout.footer')
+@include('layout.submenu')
+@section('title', '確認画面')
 @section('content')
  
 <div class="container">
@@ -45,7 +49,7 @@
                         @endif
                     @endforeach
  
-                    {!! Form::submit('戻る', ['name' => 'action', 'class' => 'btn']) !!}
+                    {!! Form::submit('戻る', ['name' => 'action', 'class' => 'btn btn-primary']) !!}
                     {!! Form::submit('送信', ['name' => 'action', 'class' => 'btn btn-primary']) !!}
                     {!! Form::close() !!}
                 </div>

@@ -1,19 +1,11 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 @section('header')
 <header class="header">
-    ■□POTATO□■
-    <!-- Example split danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-4 title">ポテトチップのススメ</h1>
+      <a role="button" class="btn btn-default btn-circle btn-lg btn-primary offset-6 col-1 homebutton" href="/"><i class="material-icons" style="align-items: center;">home</i></a>
+      <a role="button" class="btn btn-default btn-circle btn-lg btn-primary col-1 mailbutton" href="/contact"><i class="material-icons" style="align-items: center;">mail</i></a>
+    </div>
 </header>
 @endsection
