@@ -9,10 +9,10 @@ class PagenationController extends Controller
 {
 
     public function make(){
-    $pages = DB::table('potato')
-    ->join('potato_parameter','potato.id','=','potato_parameter.id')
-    ->join('potato_description','potato.id','=','potato_description.id')
-    ->paginate(6);
+    $pages = DB::table('potatos')
+    ->join('parameters','potatos.id','=','parameters.potato_id')
+    ->join('descriptions','potatos.id','=','descriptions.potato_id')
+    ->paginate(2);
     return View::make('template', ['pages' => $pages]);
     }
 
