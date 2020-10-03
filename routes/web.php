@@ -24,4 +24,7 @@ Route::post('/contact/confirm', [ContactsController::class, 'confirm']);
 Route::post('/contact/complete', [ContactsController::class, 'complete']);
 
 Route::get('/',[PagenationController::class, 'make']);
-Route::get('/grid',[PagenationController::class, 'gridtest']);
+Route::get('/sortHot', [PagenationController::class, 'sortHot']);
+Route::get('/sortSalt', [PagenationController::class, 'sortSalt']);
+Route::get('/sortGarlic', [PagenationController::class, 'sortGarlic']);
+Route::get('/sortCrispy', [PagenationController::class, 'sortCrispy']);

@@ -17,14 +17,15 @@
             並び替え
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdown1">
-            <a class="dropdown-item" href="#">Menu #1</a>
-            <a class="dropdown-item" href="#">Menu #2</a>
-            <a class="dropdown-item" href="#">Menu #3</a>
+            <a class="dropdown-item" href="/sortHot">辛さ</a>
+            <a class="dropdown-item" href="/sortCrispy">サクサクさ</a>
+            <a class="dropdown-item" href="/sortSalt">塩分み</a>
+            <a class="dropdown-item" href="/sortGarlic">ニンニク度</a>
         </div>
     </div>
 
     <div class="row">
-        <div class="card-deck">
+        <div class="card-deck col-12">
 
             @foreach ($pages as $page)
             <div class="col-xl-4 col-sm-6 grid">
@@ -65,13 +66,16 @@
                                     }]
                                 },
                                 options: {
+                                    animation: {
+                                        duration: 3000,
+                                        easing: "easeOutBounce",
+                                    },
                                     legend: {
                                         display: false,
                                     },
 
                                     title: {
-                                        display: true,
-                                        text: '5段階評価'
+                                        display: false,
                                     },
                                     scale: {
                                         label: {
@@ -94,11 +98,11 @@
         </div>
     </div>
 </div>
+<div class="d-flex justify-content-center">
+    {{ $pages->appends(request()->query())->links() }}
+</div>
 @endsection
 
-<div class="d-flex justify-content-center">
-    {{ $pages->links() }}
-</div>
 
 @include('layout.submenu')
 
