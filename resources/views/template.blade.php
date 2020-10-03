@@ -17,6 +17,7 @@
             並び替え
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdown1">
+            <a class="dropdown-item" href="/sortHot">名前</a>
             <a class="dropdown-item" href="/sortHot">辛さ</a>
             <a class="dropdown-item" href="/sortCrispy">サクサクさ</a>
             <a class="dropdown-item" href="/sortSalt">塩分み</a>

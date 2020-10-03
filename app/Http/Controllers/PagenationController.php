@@ -15,6 +15,7 @@ class PagenationController extends Controller
         $pages = DB::table('potatos')
             ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+            ->orderBy('name','desc')
             ->paginate(2);
         return View::make('template', ['pages' => $pages]);
     }

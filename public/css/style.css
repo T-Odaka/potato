@@ -34,7 +34,12 @@ header {
 footer{
     width: 100%;
     height:50px;
+    margin-top: 1rem;
     background-color: white;
+}
+
+.submenu{
+    margin-top: 1rem;
 }
 
 .potato_img{
