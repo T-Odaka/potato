@@ -26,7 +26,7 @@
     </div>
 
     <div class="row">
-        <div class="card-deck col-12">
+        <div class="card-deck col-12 mx-auto">
 
             @foreach ($pages as $page)
             <div class="col-xl-4 col-sm-6 grid">
@@ -99,7 +99,7 @@
         </div>
     </div>
 </div>
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center col-3 mx-auto">
     {{ $pages->appends(request()->query())->links() }}
 </div>
 @endsection
