@@ -17,7 +17,7 @@ class PagenationController extends Controller
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('name','desc')
             ->paginate(2);
-        return View::make('template', ['pages' => $pages]);
+        return View::make('index', ['pages' => $pages]);
     }
 
     public function sortHot()
@@ -27,7 +27,7 @@ class PagenationController extends Controller
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('hot', 'desc')
             ->paginate(2);
-        return View::make('template', ['pages' => $pages]);
+        return View::make('index', ['pages' => $pages]);
     }
 
     public function sortSalt()
@@ -37,7 +37,7 @@ class PagenationController extends Controller
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('salt', 'desc')
             ->paginate(2);
-        return View::make('template', ['pages' => $pages]);
+        return View::make('index', ['pages' => $pages]);
     }
 
     public function sortGarlic()
@@ -47,7 +47,7 @@ class PagenationController extends Controller
         ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
         ->orderBy('garlic', 'desc')
             ->paginate(2);
-        return View::make('template', ['pages' => $pages]);
+        return View::make('index', ['pages' => $pages]);
     }
 
     public function sortCrispy()
@@ -57,6 +57,6 @@ class PagenationController extends Controller
         ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
         ->orderBy('crispy', 'desc')
             ->paginate(2);
-        return View::make('template', ['pages' => $pages]);
+        return View::make('index', ['pages' => $pages]);
     }
 }
