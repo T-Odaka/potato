@@ -100,7 +100,7 @@
     </div>
 </div>
 <div class="d-flex justify-content-center col-3 mx-auto">
-    {{ $pages->appends(request()->query())->links() }}
+    {{ $pages->appends(request()->query())->links('vendor.pagination.bootstrap-4') }}
 </div>
 @endsection
 
