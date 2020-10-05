@@ -16,7 +16,7 @@ class PagenationController extends Controller
             ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('name','desc')
-            ->paginate(2);
+            ->paginate(6);
         return View::make('index', ['pages' => $pages]);
     }
 
@@ -26,7 +26,7 @@ class PagenationController extends Controller
             ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('hot', 'desc')
-            ->paginate(2);
+            ->paginate(6);
         return View::make('index', ['pages' => $pages]);
     }
 
@@ -36,7 +36,7 @@ class PagenationController extends Controller
             ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
             ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
             ->orderBy('salt', 'desc')
-            ->paginate(2);
+            ->paginate(6);
         return View::make('index', ['pages' => $pages]);
     }
 
@@ -46,7 +46,7 @@ class PagenationController extends Controller
         ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
         ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
         ->orderBy('garlic', 'desc')
-            ->paginate(2);
+            ->paginate(6);
         return View::make('index', ['pages' => $pages]);
     }
 
@@ -56,7 +56,7 @@ class PagenationController extends Controller
         ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
         ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
         ->orderBy('crispy', 'desc')
-            ->paginate(2);
+            ->paginate(6);
         return View::make('index', ['pages' => $pages]);
     }
 }
