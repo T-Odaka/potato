@@ -17,19 +17,20 @@ header {
 .grid{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
-.btn-circle.btn-lg {
-    width: 50px;
-    height: 50px;
-    padding: 10px 10px;
-    font-size: 18px;
-    line-height: 1.33;
-    border-radius: 25px;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
-    }
-    
+.infinity-grid{
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 200px);
+}
+
+
+
+.material-icons{
+    font-size: 35px;
+}
 
 footer{
     width: 100%;
@@ -38,15 +39,11 @@ footer{
     background-color: white;
 }
 
-
-.submenu{
-    margin-top: 1rem;
-}
-
-.potato_img{
+.card-img-top{
     width:100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: scale-down;
+    padding: 10%;
 }
 
 .card-title{
