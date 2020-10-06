@@ -14,15 +14,14 @@ class CreateParametersTable extends Migration
     public function up()
     {
         Schema::create('parameters', function (Blueprint $table) {
-            $table->integer('id');
+            $table->integer('id')->unsigned();
             $table->integer('hot');
             $table->integer('crispy');
             $table->integer('garlic');
             $table->integer('salt');
-            $table->integer('fk_parameters_potato_id')->unsigned();
             $table->timestamps();
             
-            $table->foreign('fk_parameters_potato_id')->references('id')->on('potatos')->onDelete('cascade');
+            $table->foreign('id')->references('id')->on('potatos')->onDelete('cascade');
         });
     }
 

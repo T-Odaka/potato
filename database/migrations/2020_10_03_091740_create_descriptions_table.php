@@ -14,13 +14,12 @@ class CreateDescriptionsTable extends Migration
     public function up()
     {
         Schema::create('descriptions', function (Blueprint $table) {
-            $table->integer('id');
+            $table->integer('id')->unsigned();
             $table->string('description');
             $table->string('image_url');
-            $table->integer('fk_descriptions_potato_id')->unsigned();
             $table->timestamps();
             
-            $table->foreign('fk_descriptions_potato_id')->references('id')->on('potatos')->onDelete('cascade');
+            $table->foreign('id')->references('id')->on('potatos')->onDelete('cascade');
         });
     }
 
