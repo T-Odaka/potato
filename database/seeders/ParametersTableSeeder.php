@@ -16,6 +16,7 @@ class ParametersTableSeeder extends Seeder
     {
         DB::table('parameters')->insert([
             [
+                'id' => 1,
                 'hot'    => 1,
                 'crispy'      => 1,
                 'garlic'      => 1,
@@ -23,6 +24,7 @@ class ParametersTableSeeder extends Seeder
             ],
 
             [
+                'id' => 2,
                 'hot'    => 2,
                 'crispy'      => 2,
                 'garlic'      => 2,
@@ -30,6 +32,7 @@ class ParametersTableSeeder extends Seeder
             ],
 
             [
+                'id' => 3,
                 'hot'    => 3,
                 'crispy'      => 3,
                 'garlic'      => 3,

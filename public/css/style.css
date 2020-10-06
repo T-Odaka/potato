@@ -1,13 +1,9 @@
 header {
-    width: 100%;
-    height:100px;
+    padding: 1rem;
     font-size: 40px;
     color:rgb(0, 140, 255);
     background-color: rgb(250, 250, 208);
     font-family: Nico Moji , sans-serif;
-}
-.title{
-    margin-top: 1rem;
 }
 
 .main{
@@ -56,4 +52,12 @@ footer{
     width: 100%;
     height: 100px;
     max-height: 100px;
+}
+
+.potato-list{
+    padding: 2rem;
+}
+
+.sub{
+    padding: 1rem;
 }

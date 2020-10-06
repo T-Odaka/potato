@@ -13,8 +13,8 @@ class PagenationController extends Controller
     public function make()
     {
         $pages = DB::table('potatos')
-            ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
-            ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+            ->join('parameters', 'potatos.id', '=', 'parameters.fk_parameters_potato_id')
+            ->join('descriptions', 'potatos.id', '=', 'descriptions.fk_descriptions_potato_id')
             ->orderBy('name','desc')
             ->paginate(6);
         return View::make('index', ['pages' => $pages]);
@@ -23,8 +23,8 @@ class PagenationController extends Controller
     public function sortHot()
     {
         $pages = DB::table('potatos')
-            ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
-            ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+            ->join('parameters', 'potatos.id', '=', 'parameters.fk_parameters_potato_id')
+            ->join('descriptions', 'potatos.id', '=', 'descriptions.fk_descriptions_potato_id')
             ->orderBy('hot', 'desc')
             ->paginate(6);
         return View::make('index', ['pages' => $pages]);
@@ -33,8 +33,8 @@ class PagenationController extends Controller
     public function sortSalt()
     {
         $pages = DB::table('potatos')
-            ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
-            ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+            ->join('parameters', 'potatos.id', '=', 'parameters.fk_parameters_potato_id')
+            ->join('descriptions', 'potatos.id', '=', 'descriptions.fk_descriptions_potato_id')
             ->orderBy('salt', 'desc')
             ->paginate(6);
         return View::make('index', ['pages' => $pages]);
@@ -43,8 +43,8 @@ class PagenationController extends Controller
     public function sortGarlic()
     {
         $pages = DB::table('potatos')
-        ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
-        ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+        ->join('parameters', 'potatos.id', '=', 'parameters.fk_parameters_potato_id')
+        ->join('descriptions', 'potatos.id', '=', 'descriptions.fk_descriptions_potato_id')
         ->orderBy('garlic', 'desc')
             ->paginate(6);
         return View::make('index', ['pages' => $pages]);
@@ -53,8 +53,8 @@ class PagenationController extends Controller
     public function sortCrispy()
     {
         $pages = DB::table('potatos')
-        ->join('parameters', 'potatos.id', '=', 'parameters.potato_id')
-        ->join('descriptions', 'potatos.id', '=', 'descriptions.potato_id')
+        ->join('parameters', 'potatos.id', '=', 'parameters.fk_parameters_potato_id')
+        ->join('descriptions', 'potatos.id', '=', 'descriptions.fk_descriptions_potato_id')
         ->orderBy('crispy', 'desc')
             ->paginate(6);
         return View::make('index', ['pages' => $pages]);
