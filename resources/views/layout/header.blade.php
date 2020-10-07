@@ -3,9 +3,31 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <h1 class="col-4 title">ポテトチップのススメ</h1>
-      <a role="button" class="offset-6 homebutton d-flex align-items-center" href="/"><i class="material-icons">home</i></a>
-      <a role="button" class="mailbutton d-flex align-items-center" href="/contact"><i class="material-icons">mail</i></a>
+      <div class="logo">
+        <a href="/"><img src="./img/e0252_1.png"></a>
+        <h1 class="col-4 title">ポテトチップのススメ </h1>
+      </div>
+      <ui class="menu">
+        <li><a role="button" href="/"><i class="material-icons float-right">home</i>
+            <p>home</p>
+          </a>
+        </li>
+        <li>
+          <a role="button" href="/contact"><i class="material-icons float-right">mail</i>
+            <p>mail</p>
+          </a>
+        </li>
+        <li>
+          <a role="button" href="/contact"><i class="material-icons float-right">build</i>
+            <p>test</p>
+          </a>
+        </li>
+        <li>
+          <a role="button" href="/contact"><i class="material-icons float-right">edit</i>
+            <p>test</p>
+          </a>
+        </li>
+      </ui>
     </div>
 </header>
 @endsection
