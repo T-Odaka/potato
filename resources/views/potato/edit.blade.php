@@ -16,8 +16,9 @@
 <form action="{{ route('potato.update',$potato->id)}}" method="POST">
     @csrf
     @method('PUT')
-    <p>名前：<input type="text" name="title" value="{{ $potato->name }}"></p>
-    <p>著者：<input type="text" name="author" value="{{ $potato->hot }}"></p>
+    <p>名前：<input type="text" name="name" value="{{ $potato->name }}"></p>
+    <p>説明：<input type="text" name="description" value="{{ $description->description }}"></p>
+    <p>辛さ：<input type="text" name="hot" value="{{ $parameter->hot }}"></p>
     <input type="submit" value="編集する">
 </form>
 </div>

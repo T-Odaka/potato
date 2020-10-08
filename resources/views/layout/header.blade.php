@@ -19,12 +19,12 @@
         </li>
         <li>
           <a role="button" href="/potato"><i class="material-icons float-right">build</i>
-            <p>test</p>
+            <p>manage</p>
           </a>
         </li>
         <li>
-          <a role="button" href="/contact"><i class="material-icons float-right">edit</i>
-            <p>test</p>
+          <a role="button" href="/potato/create"><i class="material-icons float-right">add</i>
+            <p>add</p>
           </a>
         </li>
       </ui>

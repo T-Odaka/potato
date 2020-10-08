@@ -12,16 +12,25 @@
 <table border="1">
     <tr>
         <th>id</th>
-        <th>title</th>
-        <th>author</th>
+        <th>名前</th>
+        <th>説明</th>
+        <th>サクサクさ</th>
+        <th>辛さ</th>
+        <th>ニンニク度</th>
+        <th>塩分み</th>
         <th>created_at</th>
         <th>updated_at</th>
     </tr>
     <tr>
         <td>{{ $potato->id }}</td>
         <td>{{ $potato->name }}</td>
-        <td>{{ $potato->hot }}</td>
-        <td>{{ $potato->crispy }}</td>
+        <td>{{ $description->description }}</td>
+        <td>{{ $parameter->crispy }}</td>
+        <td>{{ $parameter->hot }}</td>
+        <td>{{ $parameter->garlic }}</td>
+        <td>{{ $parameter->salt }}</td>
+        <td>{{ $potato->created_at}}</td>
+        <td>{{ $potato->updated_at}}</td>
     </tr>
 </table>
 </div>

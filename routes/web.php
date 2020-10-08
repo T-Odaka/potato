@@ -13,4 +13,5 @@ Route::get('/sortHot', [PagenationController::class, 'sortHot']);
 Route::get('/sortSalt', [PagenationController::class, 'sortSalt']);
 Route::get('/sortGarlic', [PagenationController::class, 'sortGarlic']);
 Route::get('/sortCrispy', [PagenationController::class, 'sortCrispy']);
+
 Route::resource('/potato', PotatoController::class);

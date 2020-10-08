@@ -11,7 +11,9 @@
  
 <form action="{{ route('potato.store')}}" method="POST">
     @csrf
-    <p>名前：<input type="text" name="title" value="{{old('name')}}"></p>
+    <p>名前：<input type="text" name="name" value="{{old('name')}}"></p>
+    <p>説明：<input type="text" name="description" value="{{old('description')}}"></p>
+    <p>辛さ：<input type="text" name="parameter" value="{{old('hot')}}"></p>
     <input type="submit" value="登録する">
 </form>
 </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Potato;
+use App\Models\Parameter;
+use App\Models\Description;
 
 class PotatoController extends Controller
 {
@@ -36,7 +38,9 @@ class PotatoController extends Controller
      */
     public function store(Request $request)
     {
-        Potato::created($request->all());
+        Potato::create($request->all());
+        // Parameter::create($request->all());
+        // Description::create($request->all());
         return redirect()->route('potato.index')->with('success','新規登録完了');
     }
 
@@ -49,7 +53,9 @@ class PotatoController extends Controller
     public function show($id)
     {
         $potato = Potato::find($id);
-        return view('potato.show',compact('potato'));
+        $description = Description::find($id);
+        $parameter = Parameter::find($id);
+        return view('potato.show',compact('potato','description','parameter'));
     }
 
     /**
@@ -61,7 +67,9 @@ class PotatoController extends Controller
     public function edit($id)
     {
         $potato = Potato::find($id);
-        return view('potato.edit', compact('potato'));
+        $description = Description::find($id);
+        $parameter = Parameter::find($id);
+        return view('potato.edit', compact('potato','description','parameter'));
     }
 
     /**
@@ -73,10 +81,19 @@ class PotatoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $update = [
+        $update_potato = [
             'name' => $request->name,
         ];
-        Potato::where('id', $id)->update($update);
+        $update_description = [
+            'description' => $request->description,
+        ];
+
+        $update_parameter = [
+            'hot' => $request->hot,
+        ];
+        Potato::where('id', $id)->update($update_potato);
+        Description::where('id', $id)->update($update_description);
+        Parameter::where('id', $id)->update($update_parameter);
         return back()->with('success', '編集完了しました');
     }
 

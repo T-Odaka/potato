@@ -9,7 +9,7 @@ class Parameter extends Model
 {
     use HasFactory;
 
-    protected $table = 'descriptions';
+    protected $table = 'parameters';
 
     protected $guarded = array('id');
 
