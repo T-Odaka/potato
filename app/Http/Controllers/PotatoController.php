@@ -37,7 +37,7 @@ class PotatoController extends Controller
     public function store(Request $request)
     {
         Potato::created($request->all());
-        return redirect()->route('potato.management')->with('success','新規登録完了');
+        return redirect()->route('potato.index')->with('success','新規登録完了');
     }
 
     /**
@@ -60,7 +60,7 @@ class PotatoController extends Controller
      */
     public function edit($id)
     {
-        $book = Potato::find($id);
+        $potato = Potato::find($id);
         return view('potato.edit', compact('potato'));
     }
 
@@ -89,6 +89,6 @@ class PotatoController extends Controller
     public function destroy($id)
     {
         Potato::where('id', $id)->delete();
-        return redirect()->route('potato.management')->with('success', '削除完了しました');
+        return redirect()->route('potato.index')->with('success', '削除完了しました');
     }
 }

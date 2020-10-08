@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="logo">
-        <a href="/"><img src="./img/e0252_1.png"></a>
+        <a href="/"><img src="/img/e0252_1.png"></a>
         <h1 class="col-4 title">ポテトチップのススメ </h1>
       </div>
       <ui class="menu">
@@ -18,7 +18,7 @@
           </a>
         </li>
         <li>
-          <a role="button" href="/contact"><i class="material-icons float-right">build</i>
+          <a role="button" href="/potato"><i class="material-icons float-right">build</i>
             <p>test</p>
           </a>
         </li>

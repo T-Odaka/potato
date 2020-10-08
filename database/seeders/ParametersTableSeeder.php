@@ -18,25 +18,33 @@ class ParametersTableSeeder extends Seeder
             [
                 'id' => 1,
                 'hot'    => 1,
-                'crispy'      => 1,
-                'garlic'      => 1,
-                'salt'      => 1,
-            ],
-
-            [
-                'id' => 2,
-                'hot'    => 2,
-                'crispy'      => 2,
+                'crispy'      => 3,
                 'garlic'      => 2,
                 'salt'      => 2,
             ],
 
             [
+                'id' => 2,
+                'hot'    => 0,
+                'crispy'      => 3,
+                'garlic'      => 4,
+                'salt'      => 3,
+            ],
+
+            [
                 'id' => 3,
-                'hot'    => 3,
+                'hot'    => 4,
                 'crispy'      => 3,
                 'garlic'      => 3,
-                'salt'      => 3,
+                'salt'      => 2,
+            ],
+
+            [
+                'id' => 4,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
             ],
 
         ]);

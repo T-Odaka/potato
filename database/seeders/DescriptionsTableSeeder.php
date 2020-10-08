@@ -33,6 +33,12 @@ class DescriptionsTableSeeder extends Seeder
                 'image_url'      => '/img/karamucho.jpg',
             ],
 
+            [
+                'id' => 4,
+                'description'    => '4',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
         ]);
     }
 }

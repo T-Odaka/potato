@@ -251,7 +251,7 @@ footer{
 .card-img-top:hover{
   -webkit-animation: bound 1s ease-in; 
   -moz-animation:    bound 1s ease-in; 
-  animation: bound 1s ease-in;
+  animation: bound 0.5s ease-in;
 }
 
 /** アニメーションの定義 */
@@ -259,11 +259,7 @@ footer{
   /** 開始時は１倍の大きさ */
   from { transform: scale(1); }
   /** 0%～25%にかけて1.15倍する */
-  25% { transform: scale(1.15); }
-  /** 25%～50%にかけて0.95倍する */
-  50% { transform: scale(0.95); }
-  /** 50%～75%にかけて1.05倍する */
-  75% { transform: scale(1.05); }
+  50% { transform: scale(1.15); }
   /** 終了時は元の大きさに戻す */
   to { transform: scale(1); }
 }

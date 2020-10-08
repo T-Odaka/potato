@@ -27,6 +27,10 @@ class PotatosTableSeeder extends Seeder
                 'name'    => 'からムーチョ',
             ],
 
+            [
+                'name'    => 'プリングルズ',
+            ],
+
         ]);
     }
 }
