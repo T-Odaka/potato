@@ -14,6 +14,12 @@ class PotatoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $potatos = Potato::all();
@@ -39,9 +45,9 @@ class PotatoController extends Controller
     public function store(Request $request)
     {
         Potato::create($request->all());
-        // Parameter::create($request->all());
-        // Description::create($request->all());
-        return redirect()->route('potato.index')->with('success','新規登録完了');
+        // Parameter::create();
+        // Description::create();
+        return redirect()->route('potato.index')->with('success','新規登録完了しました');
     }
 
     /**
@@ -86,10 +92,14 @@ class PotatoController extends Controller
         ];
         $update_description = [
             'description' => $request->description,
+            'image_url' => $request->image_url,
         ];
 
         $update_parameter = [
             'hot' => $request->hot,
+            'crispy' => $request->crispy,
+            'salt' => $request->salt,
+            'garlic' => $request->garlic,
         ];
         Potato::where('id', $id)->update($update_potato);
         Description::where('id', $id)->update($update_description);
