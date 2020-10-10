@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container">
-    <p><a class="btn btn-primary" href="{{ route('potato.index')}}">一覧画面</a></p>
+    
 
     <div class="card border-0 shadow-sm">
         <div class="card-header">{{ __('新規作成') }}</div>
@@ -86,5 +86,6 @@
             </form>
         </div>
     </div>
+    <p><a class="btn btn-primary" href="{{ route('potato.index')}}">一覧画面</a></p>
 </div>
 @endsection
