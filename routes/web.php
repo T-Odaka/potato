@@ -6,7 +6,7 @@ use App\Http\Controllers\PagenationController;
 use App\Http\Controllers\PotatoController;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('contact', [ContactsController::class, 'index']);
+Route::get('/contact', [ContactsController::class, 'index']);
 Route::post('/contact/confirm', [ContactsController::class, 'confirm']);
 Route::post('/contact/complete', [ContactsController::class, 'complete']);
 Route::get('/', [PagenationController::class, 'make']);
