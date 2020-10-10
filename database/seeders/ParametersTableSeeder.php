@@ -24,7 +24,7 @@ class ParametersTableSeeder extends Seeder
             ],
 
             [
-                'id' => 2,
+                'id' => 11,
                 'hot'    => 0,
                 'crispy'      => 3,
                 'garlic'      => 4,
@@ -32,7 +32,7 @@ class ParametersTableSeeder extends Seeder
             ],
 
             [
-                'id' => 3,
+                'id' => 21,
                 'hot'    => 4,
                 'crispy'      => 3,
                 'garlic'      => 3,
@@ -40,7 +40,7 @@ class ParametersTableSeeder extends Seeder
             ],
 
             [
-                'id' => 4,
+                'id' => 31,
                 'hot'    => 0,
                 'crispy'      => 4,
                 'garlic'      => 4,

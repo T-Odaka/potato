@@ -22,19 +22,19 @@ class DescriptionsTableSeeder extends Seeder
             ],
 
             [
-                'id' => 2,
+                'id' => 11,
                 'description'    => '2',
                 'image_url'      => '/img/shimonitanegi.jpg',
             ],
 
             [
-                'id' => 3,
+                'id' => 21,
                 'description'    => '3',
                 'image_url'      => '/img/karamucho.jpg',
             ],
 
             [
-                'id' => 4,
+                'id' => 31,
                 'description'    => '4',
                 'image_url'      => '/img/pringles.jpg',
             ],
