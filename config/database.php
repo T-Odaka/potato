@@ -16,7 +16,6 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
-
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -58,6 +57,8 @@ return [
             'prefix_indexes' => true,
             'strict' => false,
             'engine' => null,
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
