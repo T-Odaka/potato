@@ -22,24 +22,21 @@
             <p>manage</p>
           </a>
         </li>
-        @endif
-        @if( Auth::check() )
         <li>
           <a role="button" href="/potato/create"><i class="material-icons float-right">add</i>
             <p>add</p>
           </a>
         </li>
-        @endif
       </ui>
-      @if( Auth::check() )
       <div class="row">
         {{ Auth::user()->name }}でログイン中
         <div class="row">
-        <a class="btn btn-danger" href="{{Auth::logout()}}">Logout</a>
+          {{-- {{Auth::logout()}} とすると読み込まれた途端ログアウト処理に飛ぶ --}}
+          <a class="btn btn-danger" href="{{url('/auth/logout')}}">Logout</a>
         </div>
       </div>
       @else
-      <a class="btn btn-primary" href="login">Login</a>
+      <a class="btn btn-primary" href="/login">Login</a>
       @endif
 
     </div>

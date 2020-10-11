@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\RememberMeHandler;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -37,10 +38,12 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\RememberMeHandler::class,
         ],
 
         'api' => [
-            'throttle:api',
+            'throttle:60,1',
+            'bindings',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
@@ -62,5 +65,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'remember_me_hadler' => \App\Http\Middleware\RememberMeHandler::class
     ];
 }
