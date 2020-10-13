@@ -16,35 +16,45 @@
       <ui class="menu">
         <li>
           <a role="button" href="/">
-            <i class="material-icons">home</i>
-            <p>home</p>
+            <div class="menu-button">
+              <i class="material-icons">home</i>
+              <p>home</p>
+            </div>
           </a>
         </li>
         <li>
           <a role="button" href="/contact">
-            <i class="material-icons">mail</i>
-            <p>mail</p>
+            <div class="menu-button">
+              <i class="material-icons">mail</i>
+              <p>mail</p>
+            </div>
           </a>
         </li>
         <!-- ログインしている時のみ管理画面へのリンクを表示 -->
         @if( Auth::check() )
         <li>
           <a role="button" href="{{route('potato.index')}}">
-            <i class="material-icons">build</i>
-            <p>manage</p>
+            <div class="menu-button">
+              <i class="material-icons">build</i>
+              <p>manage</p>
+            </div>
           </a>
         </li>
         <li>
           <a role="button" href="{{route('potato.create')}}">
-            <i class="material-icons">add</i>
-            <p>add</p>
+            <div class="menu-button">
+              <i class="material-icons">add</i>
+              <p>add</p>
+            </div>
           </a>
         </li>
         <li>
           {{-- {{Auth::logout()}} とすると読み込まれた途端ログアウト処理に飛ぶ --}}
-          <a role="button" href="/logout">
-            <i class="material-icons">logout</i>
-            <p>logout</p>
+          <a role="button" href="{{ url('/logout') }}">
+            <div class="logout-button">
+              <i class="material-icons">logout</i>
+              <p>logout</p>
+            </div>
           </a>
         </li>
       </ui>
@@ -53,8 +63,10 @@
     @else
     <li>
       <a role="button" href="{{route('login')}}">
-        <i class="material-icons">login</i>
-        <p>login</p>
+        <div class="menu-button">
+          <i class="material-icons">login</i>
+          <p>login</p>
+        </div>
       </a>
     </li>
     @endif

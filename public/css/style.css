@@ -14,6 +14,10 @@ header {
     padding-bottom: 1rem;
 }
 
+.logout-button{
+    background-color: red;
+}
+
 .name-tag{
     padding: 0.5rem;
     margin-top: 1rem;
@@ -111,6 +115,10 @@ header {
     color: white;
     text-align: center;
     font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
 }
 
 ui {

@@ -1,4 +1,7 @@
-@extends('layout.common')
+@extends('layouts.common')
+@include('layouts.header')
+@include('layouts.submenu')
+@include('layouts.footer')
 
 @section('title', 'ポテトチップのススメ')
 @section('keywords', 'キーワード1,キーワード2,キーワード3')
@@ -14,9 +17,9 @@
 <script>
     // 1回目のアクセス
     if ($.cookie("access") == undefined) {
+        
         $(function () {
             var h = $(window).height();
-
             $('#wrap').css('display', 'none');
             $('#loader-bg ,#loader').height(h).css('display', 'block');
         });
@@ -37,14 +40,10 @@
             $('#loader-bg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
         }
-
         $.cookie("access","true");
-
-        // 2回目以降は動かないようにするけど最初は動かす
     } else {
         $("#loading").css("display", "none");
         $("#loading-bg").css("display", "none");
-        // 2回目以降は動かないようにする
     }
 </script>
 
@@ -57,9 +56,7 @@
     </div>
 </div>
 
-@include('layout.header')
-@include('layout.submenu')
-@include('layout.footer')
+
 
 @section('content')
 

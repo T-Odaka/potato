@@ -1,7 +1,7 @@
-@extends('layout.common')
-@include('layout.header')
-@include('layout.footer')
-@include('layout.submenu')
+@extends('layouts.common')
+@include('layouts.header')
+@include('layouts.footer')
+@include('layouts.submenu')
 @section('title', 'ログイン')
 @section('content')
 <div class="container">

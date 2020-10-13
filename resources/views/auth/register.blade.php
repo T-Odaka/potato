@@ -1,7 +1,7 @@
-@extends('layout.common')
-@include('layout.header')
-@include('layout.footer')
-@include('layout.submenu')
+@extends('layouts.common')
+@include('layouts.header')
+@include('layouts.footer')
+@include('layouts.submenu')
 @section('title', '新規登録')
 
 @section('content')
