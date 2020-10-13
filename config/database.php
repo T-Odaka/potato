@@ -16,7 +16,6 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
-
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -46,7 +45,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'us-cdbr-east-02.cleardb.com'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
@@ -58,6 +57,8 @@ return [
             'prefix_indexes' => true,
             'strict' => false,
             'engine' => null,
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
