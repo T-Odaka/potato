@@ -2,11 +2,17 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="logo col-4">
+      <div class="logo col-md-4 col-sm-12">
         <a href="/"><img src="/img/e0252_1.png" class="img-fluid center-block">
           <h1 class="title">ポテトチップのススメ </h1>
         </a>
       </div>
+
+      @if( Auth::check() )
+      <div class="name-tag">
+        {{ Auth::user()->name }}でログイン中
+      </div>
+      @endif
       <ui class="menu">
         <li>
           <a role="button" href="/">
@@ -40,9 +46,6 @@
             <i class="material-icons">logout</i>
             <p>logout</p>
           </a>
-        </li>
-        <li>
-          {{ Auth::user()->name }}でログイン中
         </li>
       </ui>
     </div>
