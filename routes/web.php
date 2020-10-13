@@ -20,4 +20,3 @@ Route::get('/sortCrispy', [PagenationController::class, 'sortCrispy']);
 Route::post('/logout' , [LogoutController::class, 'loggedOut']);
 Route::resource('/potato', PotatoController::class);
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
