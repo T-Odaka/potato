@@ -1,7 +1,7 @@
-@extends('layout.common')
-@include('layout.header')
-@include('layout.footer')
-@include('layout.submenu')
+@extends('layouts.common')
+@include('layouts.header')
+@include('layouts.footer')
+@include('layouts.submenu')
 @section('title', 'ログイン')
 @section('content')
 <div class="container">
@@ -67,8 +67,8 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group row mb-0">
-                            <a class="btn btn-link" href="{{ route('register') }}">
+                        <div class="row offset-md-6">
+                            <a href="{{ route('register') }}">
                                 {{ __('または新規登録') }}
                             </a>
                         </div>
