@@ -2,8 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagenationController;
 use App\Http\Controllers\PotatoController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/contact', [ContactsController::class, 'index']);
@@ -14,6 +17,7 @@ Route::get('/sortHot', [PagenationController::class, 'sortHot']);
 Route::get('/sortSalt', [PagenationController::class, 'sortSalt']);
 Route::get('/sortGarlic', [PagenationController::class, 'sortGarlic']);
 Route::get('/sortCrispy', [PagenationController::class, 'sortCrispy']);
+Route::post('/logout' , [LogoutController::class, 'loggedOut']);
 Route::resource('/potato', PotatoController::class);
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
