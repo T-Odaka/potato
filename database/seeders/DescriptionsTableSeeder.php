@@ -16,18 +16,27 @@ class DescriptionsTableSeeder extends Seeder
     {
         DB::table('descriptions')->insert([
             [
+                'id' => 1,
                 'description'    => '1',
-                'image_url'      => '1',
+                'image_url'      => '/img/pizapotato.jpg',
             ],
 
             [
+                'id' => 2,
                 'description'    => '2',
-                'image_url'      => '2',
+                'image_url'      => '/img/shimonitanegi.jpg',
             ],
 
             [
+                'id' => 3,
                 'description'    => '3',
-                'image_url'      => '3',
+                'image_url'      => '/img/karamucho.jpg',
+            ],
+
+            [
+                'id' => 4,
+                'description'    => '4',
+                'image_url'      => '/img/pringles.jpg',
             ],
 
         ]);
