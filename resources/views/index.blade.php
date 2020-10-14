@@ -45,7 +45,7 @@
         $("#loading-bg").css("display", "none");
     }
 </script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css"> -->
 
 @endsection
 
