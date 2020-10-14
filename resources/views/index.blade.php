@@ -12,9 +12,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
 
-<!-- <script>
+<script>
     // 1回目のアクセス
     if ($.cookie("access") == undefined) {
         
@@ -45,16 +45,16 @@
         $("#loading").css("display", "none");
         $("#loading-bg").css("display", "none");
     }
-</script> -->
+</script>
 
 @endsection
 
-<!-- <div id="loader-bg">
+<div id="loader-bg">
     <div id="loader">
         <img src="img/loading.gif" width="80" height="80" alt="Now Loading..." />
         <p>Now Loading...</p>
     </div>
-</div> -->
+</div>
 
 
 
