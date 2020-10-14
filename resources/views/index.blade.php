@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 
-<script>
+<!-- <script>
     // 1回目のアクセス
     if ($.cookie("access") == undefined) {
         
@@ -45,7 +45,7 @@
         $("#loading").css("display", "none");
         $("#loading-bg").css("display", "none");
     }
-</script>
+</script> -->
 
 @endsection
 
