@@ -8,30 +8,29 @@
 @section('description', 'インデックスページの説明文です')
 @section('pageCss')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 
 <script>
     // 1回目のアクセス
     if ($.cookie("access") == undefined) {
-        
-        $(function () {
+
+        $(function() {
             var h = $(window).height();
             $('#wrap').css('display', 'none');
             $('#loader-bg ,#loader').height(h).css('display', 'block');
         });
 
-        $(window).load(function () { //全ての読み込みが完了したら実行
+        $(window).load(function() { //全ての読み込みが完了したら実行
             $('#loader-bg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
             $('#wrap').css('display', 'block');
         });
 
         //10秒たったら強制的にロード画面を非表示
-        $(function () {
+        $(function() {
             setTimeout('stopload()', 10000);
         });
 
@@ -40,12 +39,13 @@
             $('#loader-bg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
         }
-        $.cookie("access","true");
+        $.cookie("access", "true");
     } else {
         $("#loading").css("display", "none");
         $("#loading-bg").css("display", "none");
     }
 </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 
 @endsection
 
