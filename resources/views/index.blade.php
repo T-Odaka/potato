@@ -218,7 +218,7 @@
 
         <!-- ページネーション -->
         <div class="d-flex justify-content-center col-3 mx-auto">
-            {{ $pages->appends(request()->query())->links('vendor.pagination.bootstrap-4') }}
+            {{ $pages->appends(request()->query())->links() }}
         </div>
         <div id="page_top"><a href="#"></a></div>
     </div> <!-- wrapper -->
