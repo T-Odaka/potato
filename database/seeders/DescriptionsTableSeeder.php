@@ -39,6 +39,42 @@ class DescriptionsTableSeeder extends Seeder
                 'image_url'      => '/img/pringles.jpg',
             ],
 
+            [
+                'id' => 41,
+                'description'    => '5',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
+            [
+                'id' => 51,
+                'description'    => '6',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
+            [
+                'id' => 61,
+                'description'    => '7',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
+            [
+                'id' => 71,
+                'description'    => '8',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
+            [
+                'id' => 81,
+                'description'    => '9',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
+            [
+                'id' => 91,
+                'description'    => '10',
+                'image_url'      => '/img/pringles.jpg',
+            ],
+
         ]);
     }
 }

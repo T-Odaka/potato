@@ -47,6 +47,55 @@ class ParametersTableSeeder extends Seeder
                 'salt'      => 4,
             ],
 
+            [
+                'id' => 41,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+            [
+                'id' => 51,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+            [
+                'id' => 61,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+            [
+                'id' => 71,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+            [
+                'id' => 81,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+            [
+                'id' => 91,
+                'hot'    => 0,
+                'crispy'      => 4,
+                'garlic'      => 4,
+                'salt'      => 4,
+            ],
+
+
         ]);
     }
 }

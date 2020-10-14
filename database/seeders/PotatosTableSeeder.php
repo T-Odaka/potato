@@ -31,6 +31,30 @@ class PotatosTableSeeder extends Seeder
                 'name'    => 'プリングルズ',
             ],
 
+            [
+                'name'    => 'テスト5',
+            ],
+
+            [
+                'name'    => 'テスト6',
+            ],
+
+            [
+                'name'    => 'テスト7',
+            ],
+
+            [
+                'name'    => 'テスト8',
+            ],
+
+            [
+                'name'    => 'テスト9',
+            ],
+
+            [
+                'name'    => 'テスト10',
+            ],
+
         ]);
     }
 }
