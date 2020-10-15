@@ -44,6 +44,11 @@ class PotatoController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validator = $request -> validate([
+            'name' => 'required',
+        ]);
+
         $create_potato = [
             'name' => $request->name
         ];

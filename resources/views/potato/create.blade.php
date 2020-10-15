@@ -13,7 +13,12 @@
             <div class="card-body">
                 <form action="{{ route('potato.store')}}" method="POST">
                     @csrf
-                    <p>名前：<input type="text" name="name" value="{{old('name')}}"></p>
+                    <p>名前：<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value="{{old('name')}}"></p>
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
 
                     <!-- サクサクさのプルダウンメニュー -->
                     <div class="row">
