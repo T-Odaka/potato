@@ -45,9 +45,16 @@ class PotatoController extends Controller
     public function store(Request $request)
     {
 
-        $validator = $request -> validate([
+        $validator = $request->validate([
             'name' => 'required',
         ]);
+
+        if (!$validator) {
+            return
+                redirect('potato.create')
+                ->withErrors($validator)
+                ->withInput();
+        }
 
         //cleadDBの仕様でidは10ずつ増える 
         $create_id = Potato::max('id') + 10;
