@@ -44,16 +44,19 @@ class PotatoController extends Controller
      */
     public function store(Request $request)
     {
+        $create_id = Potato::max('id');
         $create_potato = [
             'name' => $request->name
         ];
         $create_parameter = [
+            'id' => $create_id,
             'hot' => $request->hot,
             'crispy' => $request->crispy,
             'salt' => $request->salt,
             'garlic' => $request->garlic,
         ];
         $create_description = [
+            'id' => $create_id,
             'image_url' => $request->image_url,
             'description' => $request->description,
         ];
