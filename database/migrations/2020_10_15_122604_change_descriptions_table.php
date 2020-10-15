@@ -15,7 +15,7 @@ class ChangeDescriptionsTable extends Migration
     {
         Schema::table('descriptions', function (Blueprint $table) {
             $table->string('description')->nullable()->change();
-            $table->string('image_url')->default('/img/noimage.jpg')->change();
+            $table->string('image_url')->nullable()->change();
         });
     }
 
@@ -28,7 +28,7 @@ class ChangeDescriptionsTable extends Migration
     {
         Schema::table('descriptions', function (Blueprint $table) {
             $table->string('description')->nullable(false)->change();
-            $table->string('image_url')->nullable(true)->change();
+            $table->string('image_url')->nullable(false)->change();
         });
     }
 }
