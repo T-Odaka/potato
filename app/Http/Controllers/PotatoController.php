@@ -49,18 +49,21 @@ class PotatoController extends Controller
             'name' => 'required',
         ]);
 
+        //cleadDBの仕様でidは10ずつ増える 
+        $create_id = Potato::max('id') + 10;
+
         $create_potato = [
             'name' => $request->name
         ];
         $create_parameter = [
-            'id' => Potato::max('id'),
+            'id' => $create_id,
             'hot' => $request->hot,
             'crispy' => $request->crispy,
             'salt' => $request->salt,
             'garlic' => $request->garlic,
         ];
         $create_description = [
-            'id' => Potato::max('id'),
+            'id' => $create_id,
             'image_url' => $request->image_url,
             'description' => $request->description,
         ];
