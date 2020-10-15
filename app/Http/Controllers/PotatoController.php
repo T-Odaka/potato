@@ -23,7 +23,7 @@ class PotatoController extends Controller
     public function index()
     {
         $potatos = Potato::all();
-        return view('potato.management',['potatos' => $potatos]);
+        return view('potato.management', ['potatos' => $potatos]);
     }
 
     /**
@@ -44,10 +44,21 @@ class PotatoController extends Controller
      */
     public function store(Request $request)
     {
-        Potato::create($request->all());
-        // Parameter::create();
-        // Description::create();
-        return redirect()->route('potato.index')->with('success','新規登録完了しました');
+        $create_potato = $request->name;
+        $create_parameter = [
+            $request->hot,
+            $request->crispy,
+            $request->salt,
+            $request->garlic,
+        ];
+        $create_description = [
+            $request->image_url,
+            $request->description,
+        ];
+        Potato::create($create_potato);
+        Parameter::create($create_parameter);
+        Description::create($create_description);
+        return redirect()->route('potato.index')->with('success', '新規登録完了しました');
     }
 
     /**
@@ -61,7 +72,7 @@ class PotatoController extends Controller
         $potato = Potato::find($id);
         $description = Description::find($id);
         $parameter = Parameter::find($id);
-        return view('potato.show',compact('potato','description','parameter'));
+        return view('potato.show', compact('potato', 'description', 'parameter'));
     }
 
     /**
@@ -75,7 +86,7 @@ class PotatoController extends Controller
         $potato = Potato::find($id);
         $description = Description::find($id);
         $parameter = Parameter::find($id);
-        return view('potato.edit', compact('potato','description','parameter'));
+        return view('potato.edit', compact('potato', 'description', 'parameter'));
     }
 
     /**
