@@ -62,11 +62,20 @@ class PotatoController extends Controller
             'salt' => $request->salt,
             'garlic' => $request->garlic,
         ];
+
+        // 画像URLがなかった場合の処理
+        if($request->image_url == null){
+            $img = '/img/noimg.jpg';
+        }else{
+            $img = $request->image_url;
+        }
+
         $create_description = [
             'id' => $create_id,
-            'image_url' => $request->image_url,
+            'image_url' => $img,
             'description' => $request->description,
         ];
+
         Potato::create($create_potato);
         Parameter::create($create_parameter);
         Description::create($create_description);
