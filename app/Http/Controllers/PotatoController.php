@@ -65,7 +65,7 @@ class PotatoController extends Controller
 
         // 画像URLがなかった場合の処理
         if($request->image_url == null){
-            $img = '/img/noimg.jpg';
+            $img = '/img/noimg.png';
         }else{
             $img = $request->image_url;
         }
@@ -119,12 +119,24 @@ class PotatoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'name' => 'required',
+        ]);
+
         $update_potato = [
             'name' => $request->name,
         ];
+
+        // 画像URLがなかった場合の処理
+        if ($request->image_url == null) {
+            $img = '/img/noimg.png';
+        } else {
+            $img = $request->image_url;
+        }
+
         $update_description = [
             'description' => $request->description,
-            'image_url' => $request->image_url,
+            'image_url' => $img,
         ];
 
         $update_parameter = [
