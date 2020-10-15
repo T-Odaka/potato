@@ -16,7 +16,7 @@ class Description extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'description', 'image_url', 'created_at', 'updated_at'
+        'id','description', 'image_url', 'created_at', 'updated_at'
     ];
 
     public function potatos()

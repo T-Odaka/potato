@@ -16,7 +16,7 @@ class Parameter extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'hot', 'crispy', 'garlic', 'salt'
+        'id', 'hot', 'crispy', 'garlic', 'salt'
     ];
 
     public function potatos()
