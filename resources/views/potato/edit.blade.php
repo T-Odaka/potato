@@ -21,7 +21,7 @@
                     @csrf
                     @method('PUT')
                     <div class="row">
-                        <p>名前：<input type="text" name="name" value="{{ $potato->name }}"></p>
+                        <p>名前:<input type="text" name="name" value="{{ $potato->name }}"></p>
                     </div>
 
                     <!-- サクサクさのプルダウンメニュー -->
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="row">
-                        <p>説明：</p><textarea class="col-4" type="text" name="description" value="{{ $description->description }}">{{ $description->description }}</textarea>
+                        <p>説明:</p><textarea class="col-sm-10" type="text" name="description" value="{{ $description->description }}">{{ $description->description }}</textarea>
                     </div>
                     <input class="btn btn-primary" type="submit" value="保存">
                 </form>
