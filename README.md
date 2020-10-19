@@ -1,10 +1,8 @@
 ## ポテトのススメ
 公開URL：https://potatonosusume.herokuapp.com/
 
-## About Potato-no-susume
-
 フレームワークLaravelでのMVCパターンのソースです。  
-一覧画面、お問い合わせ画面のほか、ログイン後画面でCRAD処理を実装しています。  
+一覧画面、お問い合わせ画面のほか、ログイン後画面でCRUD処理を実装しています。  
 グラフ表示はChart.jsを使用しています。  
 
 ## 開発環境
