@@ -13,13 +13,13 @@
 - ライブラリ -> Chart.js
 - バージョン管理 -> Git
 
-![architecture](https://user-images.githubusercontent.com/59603125/96447773-674fd900-124d-11eb-811d-a52e41e50f50.png)
+![architecture](https://user-images.githubusercontent.com/59603125/96470953-c6234b80-1269-11eb-9861-7a929ed75fcc.png)
 
 
 ## 主構成ファイル
-- Model:app -> Models内
-- View :resources -> views内
-- Controller:app -> Http -> controllers内
+- Model : app -> Models内
+- View  : resources -> views内
+- Controller : app -> Http -> controllers内
 
 ## マイグレーションファイル
 - database内  
