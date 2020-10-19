@@ -11,6 +11,7 @@
 
 html, body {
     height: 100%;
+    background: #FFCC33;
 }
 
 .wrapper {
@@ -194,7 +195,8 @@ ui li+li {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
-    background: rgb(0, 109, 160);
+    background: #FFCC33;
+    /* background: rgb(0, 109, 160); */
     opacity: 0.6;
     border-radius: 50%;
 }
