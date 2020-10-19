@@ -44,9 +44,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <a class="btn btn-primary" 　href="{{ route('potato.create') }}"><i class="material-icons float-right">add</i></a>
-        </div>
     </div>
 </div>
 @endsection
