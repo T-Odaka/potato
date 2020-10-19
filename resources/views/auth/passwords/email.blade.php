@@ -38,7 +38,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('再設定用リンクの送信'') }}
+                                        {{ __('再設定用リンクの送信') }}
                                     </button>
                                 </div>
                             </div>
