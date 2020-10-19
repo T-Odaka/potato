@@ -9,7 +9,7 @@
         <div class="card border-0 shadow-sm">
             <div class="card-header">送信完了</div>
             <div class="card-body">
-                <p>お問い合わせありがとうございます。内容を確認次第返信いたします。</p>
+                <p>お問い合わせありがとうございます。内容をご確認次第返信いたします。</p>
                 <p>5秒後自動でトップページに遷移いたします。</p>
             </div>
         </div>

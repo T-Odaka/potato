@@ -13,7 +13,7 @@
 
                     <div class="card-header">お問い合わせ</div>
                     <div class="card-body">
-                        <p>誤りがないことを確認のうえ送信ボタンをクリックしてください。</p>
+                        <p>誤りがないことをご確認頂き、送信ボタンをクリックしてください。</p>
 
                         <table class="table">
                             <tr>
