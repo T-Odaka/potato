@@ -1,6 +1,6 @@
 @section('header')
 <header class="header">
-  <div class="container logo">
+  <div class="logo">
     <a href="/"><img src="/img/hukidashiv2.png" class="img-fluid center-block">
     </a>
   </div>

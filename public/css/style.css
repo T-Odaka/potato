@@ -39,6 +39,7 @@ header {
     /*親div*/
     position: relative;
     max-width: 20rem;
+    float: left;
     /*相対配置*/
 }
 
