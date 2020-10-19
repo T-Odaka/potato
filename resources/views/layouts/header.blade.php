@@ -4,7 +4,6 @@
     <div class="row">
       <div class="logo col-md-4 col-sm-12">
         <a href="/"><img src="/img/hukidashi.png" class="img-fluid center-block">
-          <h1 class="title">ポテトチップのススメ </h1>
         </a>
       </div>
 
@@ -14,50 +13,49 @@
       </div>
       @endif
       <ui class="menu">
-
-        <a role="button" href="/">
-          <li>
+        <li>
+          <a role="button" href="/">
             <div class="menu-button">
               <i class="material-icons">home</i>
               <p>home</p>
             </div>
-          </li>
-        </a>
-        <a role="button" href="/contact">
-          <li>
+          </a>
+        </li>
+        <li>
+          <a role="button" href="/contact">
             <div class="menu-button">
               <i class="material-icons">mail</i>
               <p>mail</p>
             </div>
-          </li>
           </a>
+        </li>
         <!-- ログインしている時のみ管理画面へのリンクを表示 -->
         @if( Auth::check() )
-        <a role="button" href="{{route('potato.index')}}">
-          <li>
+        <li>
+          <a role="button" href="{{route('potato.index')}}">
             <div class="menu-button">
               <i class="material-icons">build</i>
               <p>manage</p>
             </div>
-          </li>
           </a>
+        </li>
+        <li>
           <a role="button" href="{{route('potato.create')}}">
-          <li>
             <div class="menu-button">
               <i class="material-icons">add</i>
               <p>add</p>
             </div>
-          </li>
           </a>
+        </li>
+        <li>
           {{-- {{Auth::logout()}} とすると読み込まれた途端ログアウト処理に飛ぶ --}}
           <a role="button" href="{{ url('/logout') }}">
-            <li>
             <div class="logout-button">
               <i class="material-icons">logout</i>
               <p>logout</p>
             </div>
-          </li>
           </a>
+        </li>
       </ui>
     </div>
     <!-- ログインしていない場合、ログインボタンを配置 -->
