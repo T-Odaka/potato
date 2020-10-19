@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="logo col-md-4 col-sm-12">
-        <a href="/"><img src="/img/e0252_1.png" class="img-fluid center-block">
+        <a href="/"><img src="/img/e0724_1.png" class="img-fluid center-block">
           <h1 class="title">ポテトチップのススメ </h1>
         </a>
       </div>
