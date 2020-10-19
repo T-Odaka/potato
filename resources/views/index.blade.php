@@ -1,6 +1,5 @@
 @extends('layouts.common')
 @include('layouts.header')
-@include('layouts.submenu')
 @include('layouts.footer')
 
 @section('title', 'ポテトチップのススメ')
