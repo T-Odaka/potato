@@ -14,11 +14,15 @@
                 <form action="{{ route('potato.store')}}" method="POST">
                     @csrf
                     <p>名前：<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value="{{old('name')}}"></p>
-                    @error('name')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
 
                     <!-- サクサクさのプルダウンメニュー -->
                     <div class="row">
