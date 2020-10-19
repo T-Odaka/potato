@@ -78,7 +78,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12  grid">
 
                     <!-- カード本体 -->
-                    <div class="card border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm effect-fade">
                         <?php
                         $str = $page->id;
                         $data = [$page->hot, $page->garlic, $page->salt, $page->crispy];
