@@ -31,15 +31,14 @@ header {
 }
 
 .name-tag{
-    padding: 0.5rem;
-    margin-top: 1rem;
     color: white;
-    top: 50%;
+    text-align: center;
 }
 
 .logo {
     /*親div*/
     position: relative;
+    max-width: 20rem;
     /*相対配置*/
 }
 
