@@ -65,11 +65,6 @@ header {
     color: rgb(58, 58, 187);
 }
 
-.logo img {
-   margin-top: -5rem;
-   margin-left: -10rem;
-}
-
 .card-body h5 {
     color: black;
     font-family: "Nico Moji", sans-serif;
