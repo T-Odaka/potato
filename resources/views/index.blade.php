@@ -45,6 +45,17 @@
         $("#loading-bg").css("display", "none");
     }
 </script>
+
+<noscript>
+    <style>
+        .js-animation {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+    </style>
+</noscript>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 @endsection
 <div id="loader-bg">
