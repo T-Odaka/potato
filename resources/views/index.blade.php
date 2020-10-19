@@ -83,11 +83,11 @@
                         $str = $page->id;
                         $data = [$page->hot, $page->garlic, $page->salt, $page->crispy];
                         $detail = [$page->description, $page->image_url];
-                        echo "<img class=card-img-top src=$detail[1] alt=$page->name >"
+                        echo "<img class=card-img-top src=$detail[1] alt=$page->name loading=lazy>"
                         ?>
                         <div class="card-body">
                             <div class="hukidashi-title">
-                                <img src="img/e0520_0.png">
+                                <img src="img/e0520_0.png" loading="lazy">
                                 <h5>{{ $page->name }}</h5>
                             </div>
                             <p class="card-text"><?php echo $detail[0] ?></p>
@@ -156,7 +156,7 @@
                                 $str = $page->id;
                                 $data = [$page->hot, $page->garlic, $page->salt, $page->crispy];
                                 $detail = [$page->description, $page->image_url];
-                                echo "<img class=card-img-top img-fluid src=$detail[1] alt=$page->name >"
+                                echo "<img class=card-img-top img-fluid src=$detail[1] alt=$page->name loading=lazy>"
                                 ?>
                             </div>
                             <div class="col-md-8">
