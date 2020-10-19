@@ -1,18 +1,17 @@
 @section('header')
 <header class="header">
+  <div class="logo col-md-4 col-sm-12">
+    <a href="/"><img src="/img/hukidashi.png" class="img-fluid center-block">
+    </a>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="logo col-md-4 col-sm-12">
-        <a href="/"><img src="/img/hukidashi.png" class="img-fluid center-block">
-        </a>
-      </div>
-
       @if( Auth::check() )
       <div class="name-tag">
         {{ Auth::user()->name }}でログイン中
       </div>
       @endif
-      <ui class="menu">
+      <ui class="menu mx-auto">
         <li>
           <a role="button" href="/">
             <div class="menu-button">
