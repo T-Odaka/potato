@@ -66,8 +66,8 @@ header {
 }
 
 .logo img {
-    height: 100%;
-    padding: 1rem;
+   margin-top: -5rem;
+   margin-left: -10rem;
 }
 
 .card-body h5 {
